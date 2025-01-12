@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Tembak Pacar</title>
+    <style>
+        /* styles.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #dd083d;
+        }
+        p{
+            color: black;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('gambar_4.jpg') no-repeat center center fixed; /* Ganti dengan gambar yang kamu pilih */
+            background-size: cover;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: rgba(233, 226, 226, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 10px 30px rgba(238, 234, 234, 0.3);
+            animation: fadeIn 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: slideIn 1s ease-out;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .content .photo {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            border: 5px solid #000000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            animation: zoomIn 1s ease-out;
+        }
+
+        .message {
+            font-size: 20px;
+            margin-bottom: 40px;
+            font-weight: lighter;
+            line-height: 1.5;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button#confirmBtn {
+            background: #ff3366;
+            color: white;
+        }
+
+        button#rejectBtn {
+            background: #ff6666;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        button#confirmBtn:hover {
+            background: #ff6699;
+        }
+
+        button#rejectBtn:hover {
+            background: #ff9999;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💕Tembak Pacar💕</h1>
+            
+            <p class="subtitle">Jangan takut untuk menyatakan perasaan!</p>
+            
+           
+        </header>
+
+        <section class="content">
+            <img src="gambar_2.jpg" alt="Foto Saya" class="photo">
+            <p class="message">Aku suka kamu, dan ingin kamu jadi pacarku. Semoga kamu juga merasakan hal yang sama!</p>
+        </section>
+
+        <div class="buttons">
+            <button id="confirmBtn">iya,aku juga mau!</button>
+            <button id="rejectBtn">Aku Gak Mau Pacaran</button>
+        </div>
+    </div>
+
+    <script>
+        // script.js
+        document.getElementById('confirmBtn').addEventListener('click', function() {
+            alert("Karna kamu m3m3knya enak di genjot, kwkwkwkw!");
+        });
+
+        document.getElementById('rejectBtn').addEventListener('click', function() {
+            alert("Aku gak mau sama kamu,soalnya kamu jelek,mukanya kaya anak hilang🤣🤣!");
+        });
+    </script>
+</body>
+</html>
